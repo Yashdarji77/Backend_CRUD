@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/testapp1")
+mongoose.connect("mongodb+srv://yash2403:yash2403@cluster0.1hn2feb.mongodb.net/testapp").then(()=>{
+    console.log("connected successfully")
+})
 
 const userSchema = mongoose.Schema({
     image: String,
